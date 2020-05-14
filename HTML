@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+         <style>
+        body{background-color: skyblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+
+#container{
+    border: 2px solid black;
+    padding: 20px;
+    }
+        </style>
+    </head>
+    <body>
+        
+       <h1>Assignment 10</h1>
+
+<div id="container">
+    <div class="Num">
+    <form>
+<label class="label1">Enter GPA Qulaity points:</label>
+        <input type="number" id="points" name="points" /> <br>
+<label class="label1">How many hours did you register this Term?</label>
+        <input type="number" id="h_term" name="h_term" /><br>
+    <label class="label1">please enter your GPA hours:</label>
+        <input type="number" id="gpa_hours" name="gpa_hours" /><br><br>
+        <label class="label1">please enter the points for each course and press enter:</label><br>
+        <input type="number" id="a_num" name="a_num" /><br>
+        <input type="number" id="b_num" name="b_num" /><br>
+        <input type="number" id="c_num" name="c_num" /><br>
+        <input type="number" id="d_num" name="d_num" /><br>
+        <input type="number" id="e_num" name="e_num" /><br>
+        <input type="number" id="f_num" name="f_num" /><br>
+        
+        
+<br/>
+<input type="button" id="clickme" value="Which number is greater?" onclick="greaterNum()" />
+</form>
+        <script>
+        function greaterNum(){
+    var value1;
+    var value2;
+    var value3;
+    var value4;
+    var value5;
+    var value6;
+    var value7;
+    var value8;
+    var value9;
+    var sum;
+    var hours;        
+    value1 = parseFloat(document.getElementById("points").value);
+    value2 = parseFloat(document.getElementById("h_term").value);
+    value3 = parseFloat(document.getElementById("gpa_hours").value);
+            
+    value4 = parseFloat(document.getElementById("a_num").value);        
+    value5 = parseFloat(document.getElementById("b_num").value);        
+    value6 = parseFloat(document.getElementById("c_num").value);        
+    value7 = parseFloat(document.getElementById("d_num").value);        
+    value8 = parseFloat(document.getElementById("e_num").value);        
+    value9 = parseFloat(document.getElementById("f_num").value);        
+            sum = value4+value5+value6+value7+value8+value9+value1;
+            hours = (value2+value3);
+            
+        alert(sum / hours);
+        document.body.style.background = "orange";
+    
+    
+}
+            </script>
+  
+    </body>
+</html>
